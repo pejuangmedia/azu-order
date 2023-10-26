@@ -10,38 +10,38 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6354752626:AAH5qLQieENDts4MefVBJ6bX7HxW5z0otdU")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6939370371:AAE0MFOwk_ajiUfjFAv0w51EMPGKz4gxqk0")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "26796802"))
+APP_ID = int(os.environ.get("APP_ID", "25876775"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "b8cc96196eb105c33d8ce193e5efff5c")
+API_HASH = os.environ.get("API_HASH", "88116cead177ae7c73e0d239819134f6")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001292557562"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002105359961"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1474271232"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6038168213"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Eln:Chaik2501@cluster0.9ipuplz.mongodb.net/")
-DB_NAME = os.environ.get("DATABASE_NAME", "FSPan")
+DB_NAME = os.environ.get("DATABASE_NAME", "handalDood")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001862629813"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001728175396"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001967700323"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1002045530127"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋, \n\nMampir dulu boleh kali Bree 😉 @panimeid & @ongoingpmid</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋</b>")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1474271232 5531142222").split()):
+    for x in (os.environ.get("ADMINS", "6038168213 5531142222").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -56,12 +56,12 @@ CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
 
 #Set true if you want Disable your Channel Posts Share button
-DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
+DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'False'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 
-USCH = os.environ.get("USCH", "@panimeid")
-USOW = os.environ.get("USOW", "El")
+USCH = os.environ.get("USCH", "@Bokepbocilindo1")
+USOW = os.environ.get("USOW", "@Doodhandalll")
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1474271232)
